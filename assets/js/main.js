@@ -50,7 +50,14 @@ function openWhatsApp(form) {
     return false;
   }
   form.text.value =
-    "I would like to order " + order_no + "\n\n" + name + "\n" + address + "\n";
+    "I would like to order " +
+    order_no +
+    "\n\n" +
+    "Name: " +
+    name +
+    "\n" +
+    "Address: " +
+    address;
   form.action = uri + form.mobile.value;
   return true;
 }
